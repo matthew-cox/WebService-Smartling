@@ -32,9 +32,9 @@ __Note:__ Enabling debug mode will change the API end point to the
 Smartling Sandbox API. This is an excellent way to debug your API
 interactions without affecting your production project.
 
-my $sl = WebService::Smartling->new( param => { apiKey    => $KEY,
-                                                projectId => $ID },
-                                     debug => 1 );
+    my $sl = WebService::Smartling->new( param => { apiKey    => $KEY,
+                                                    projectId => $ID },
+                                         debug => 1 );
 
 - __Parameters__
 - apiKey __(required)__
@@ -128,7 +128,7 @@ Refer to
 Lists recently uploaded files. Returns a maximum of 100 files.
 
 Refer to 
-[https://docs.smartling.com/display/docs/Files+API\#FilesAPI-/file/list(GET)](https://docs.smartling.com/display/docs/Files+API\#FilesAPI-/file/list(GET))
+[https://docs.smartling.com/display/docs/Files+API\#FilesAPI-/file/list%28GET%29](https://docs.smartling.com/display/docs/Files+API\#FilesAPI-/file/list%28GET%29)
 
 - __Parameters__
 - locale _(optional)_
@@ -204,7 +204,6 @@ Refer to
                    "fileType": "[fileType]" },
                { ... } ]
             }
-            
 
 ## fileRename(_%params_)
 
@@ -230,7 +229,6 @@ Refer to
 - __Returns: JSON result from API__
 
             {"response":{"code":"SUCCESS","messages":[],"data":null,}}
-            
 
 ## fileStatus(_%params_)
 
@@ -254,7 +252,6 @@ Refer to
 - __Returns: JSON result from API__
 
             {
-
               "fileUri": "[/myproject/i18n/admin_ui.properties]",
               "stringCount": "[number]",
               "wordCount": "[number]",
@@ -265,22 +262,20 @@ Refer to
             }
             
 
-        fileUri - A unique identifier for the uploaded file.
+            fileUri - A unique identifier for the uploaded file.
 
-        stringCount - The number of strings in the uploaded file.
+            stringCount - The number of strings in the uploaded file.
 
-        wordCount - The number of words in the uploaded file.
+            wordCount - The number of words in the uploaded file.
 
-        approvedStringCount - The number of strings in the uploaded file that 
-        are approved (available for translation).
+            approvedStringCount - The number of strings in the uploaded file that are approved (available for translation).
 
-        completedStringCount - The number of strings in the uploaded file that 
-        are approved and translated.
+            completedStringCount - The number of strings in the uploaded file that are approved and translated.
 
-        lastUploaded - The time and date of the last upload: YYYY-MM-DDThh:mm:ss
+            lastUploaded - The time and date of the last upload: YYYY-MM-DDThh:mm:ss
 
-        fileType - The type of file: android, ios, gettext, javaProperties, xliff, yaml
-         
+            fileType - The type of file: android, ios, gettext, javaProperties, xliff, yaml
+            
 
 ## fileUpload(_%params_)
 
@@ -288,7 +283,7 @@ Uploads original source content to Smartling (5MB limit), not translated
 files (other than importing .tmx files).
 
 Refer to 
-[https://docs.smartling.com/display/docs/Files+API\#FilesAPI-/file/upload(POST)](https://docs.smartling.com/display/docs/Files+API\#FilesAPI-/file/upload(POST))
+[https://docs.smartling.com/display/docs/Files+API\#FilesAPI-/file/upload%28POST%29](https://docs.smartling.com/display/docs/Files+API\#FilesAPI-/file/upload%28POST%29)
 
 - __Parameters__
 - file __(required)__
@@ -333,15 +328,12 @@ Refer to
               "stringCount": "[number]",
               "wordCount": "[number]"
             }
-            
 
-        overWritten - Indicates whether the uploaded file has overwritten an 
-        existing file; either true or false.
+            overWritten - Indicates whether the uploaded file has overwritten an existing file; either true or false.
 
-        stringCount - The number of strings in the uploaded file.
+            stringCount - The number of strings in the uploaded file.
 
-        wordCount - The number of words in the uploaded file.
-         
+            wordCount - The number of words in the uploaded file.
 
 ## projectLocaleList( )
 
@@ -369,13 +361,12 @@ Refer to [https://docs.smartling.com/display/docs/Projects+API](https://docs.sma
                   }
               ]
             }
-            
 
-        locale - Locale identifier
+            locale - Locale identifier
 
-        name - Source locale name
+            name - Source locale name
 
-        translated - Localized locale name
+            translated - Localized locale name
 
 # AUTHOR
 

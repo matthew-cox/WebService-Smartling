@@ -26,8 +26,9 @@ INTERFACE
     Sandbox API. This is an excellent way to debug your API interactions
     without affecting your production project.
 
-    my $sl = WebService::Smartling->new( param => { apiKey => $KEY,
-    projectId => $ID }, debug => 1 );
+     my $sl = WebService::Smartling->new( param => { apiKey    => $KEY,
+                                                     projectId => $ID },
+                                          debug => 1 );
 
     Parameters
     apiKey (required)
@@ -48,7 +49,8 @@ INTERFACE
     with the same fileUri.
 
     Refer to
-    <https://docs.smartling.com/display/docs/Files+API#FilesAPI-/file/delete%28DELETE%29>
+    <https://docs.smartling.com/display/docs/Files+API#FilesAPI-/file/delete
+    %28DELETE%29>
 
     Parameters
     fileUri (required)
@@ -73,7 +75,8 @@ INTERFACE
     can always to determine the character encoding.
 
     Refer to
-    <https://docs.smartling.com/display/docs/Files+API#FilesAPI-/file/status%28GET%29>
+    <https://docs.smartling.com/display/docs/Files+API#FilesAPI-/file/status
+    %28GET%29>
 
     Parameters
     fileUri (required)
@@ -114,7 +117,8 @@ INTERFACE
     Lists recently uploaded files. Returns a maximum of 100 files.
 
     Refer to
-    <https://docs.smartling.com/display/docs/Files+API#FilesAPI-/file/list(GET)>
+    <https://docs.smartling.com/display/docs/Files+API#FilesAPI-/file/list%2
+    8GET%29>
 
     Parameters
     locale *(optional)*
@@ -188,7 +192,8 @@ INTERFACE
     file, the file will only be identified by the new fileUri you provide.
 
     Refer to
-    <https://docs.smartling.com/display/docs/Files+API#FilesAPI-/file/rename%28POST%29>
+    <https://docs.smartling.com/display/docs/Files+API#FilesAPI-/file/rename
+    %28POST%29>
 
     Parameters
     fileUri (required)
@@ -211,7 +216,8 @@ INTERFACE
     files (other than importing .tmx files).
 
     Refer to
-    <https://docs.smartling.com/display/docs/Files+API#FilesAPI-/file/status%28GET%29>
+    <https://docs.smartling.com/display/docs/Files+API#FilesAPI-/file/status
+    %28GET%29>
 
     Parameters
     fileUri (required)
@@ -225,7 +231,6 @@ INTERFACE
     Returns: JSON result from API
 
              {
-
                "fileUri": "[/myproject/i18n/admin_ui.properties]",
                "stringCount": "[number]",
                "wordCount": "[number]",
@@ -234,31 +239,28 @@ INTERFACE
                "lastUploaded": "[YYYY-MM-DDThh:mm:ss]",    
                "fileType": "[fileType]"
              }
+ 
+             fileUri - A unique identifier for the uploaded file.
 
-            fileUri - A unique identifier for the uploaded file.
+             stringCount - The number of strings in the uploaded file.
 
-            stringCount - The number of strings in the uploaded file.
+             wordCount - The number of words in the uploaded file.
 
-            wordCount - The number of words in the uploaded file.
+             approvedStringCount - The number of strings in the uploaded file that are approved (available for translation).
 
-            approvedStringCount - The number of strings in the uploaded file
-            that are approved (available for translation).
+             completedStringCount - The number of strings in the uploaded file that are approved and translated.
 
-            completedStringCount - The number of strings in the uploaded
-            file that are approved and translated.
+             lastUploaded - The time and date of the last upload: YYYY-MM-DDThh:mm:ss
 
-            lastUploaded - The time and date of the last upload:
-            YYYY-MM-DDThh:mm:ss
-
-            fileType - The type of file: android, ios, gettext,
-            javaProperties, xliff, yaml
+             fileType - The type of file: android, ios, gettext, javaProperties, xliff, yaml
 
   fileUpload(*%params*)
     Uploads original source content to Smartling (5MB limit), not translated
     files (other than importing .tmx files).
 
     Refer to
-    <https://docs.smartling.com/display/docs/Files+API#FilesAPI-/file/upload%28POST%28>
+    <https://docs.smartling.com/display/docs/Files+API#FilesAPI-/file/upload
+    %28POST%29>
 
     Parameters
     file (required)
@@ -299,12 +301,11 @@ INTERFACE
                "wordCount": "[number]"
              }
 
-            overWritten - Indicates whether the uploaded file has
-            overwritten an existing file; either true or false.
+             overWritten - Indicates whether the uploaded file has overwritten an existing file; either true or false.
 
-            stringCount - The number of strings in the uploaded file.
+             stringCount - The number of strings in the uploaded file.
 
-            wordCount - The number of words in the uploaded file.
+             wordCount - The number of words in the uploaded file.
 
   projectLocaleList( )
     Returns the enabled locales and identifiers for the project
@@ -331,11 +332,11 @@ INTERFACE
                ]
              }
 
-            locale - Locale identifier
+             locale - Locale identifier
 
-            name - Source locale name
+             name - Source locale name
 
-            translated - Localized locale name
+             translated - Localized locale name
 
 AUTHOR
     Matthew Cox, "<matt.cox at runkeeper.com>"

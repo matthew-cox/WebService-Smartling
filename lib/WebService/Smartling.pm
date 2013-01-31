@@ -75,9 +75,9 @@ B<Note:> Enabling debug mode will change the API end point to the
 Smartling Sandbox API. This is an excellent way to debug your API
 interactions without affecting your production project.
 
-my $sl = WebService::Smartling->new( param => { apiKey    => $KEY,
-                                                projectId => $ID },
-                                     debug => 1 );
+ my $sl = WebService::Smartling->new( param => { apiKey    => $KEY,
+                                                 projectId => $ID },
+                                      debug => 1 );
 
 =over 4
 
@@ -97,7 +97,6 @@ L<https://dashboard.smartling.com/settings/api>
 
 =cut
 
-  
 my( %ALL_SPECS ) = (
   apiKey             => { type => SCALAR, regex => qr/$REGEX_APIKEY/, },
   approved           => { type => SCALAR, },
@@ -305,7 +304,7 @@ sub fileGet {
 Lists recently uploaded files. Returns a maximum of 100 files.
 
 Refer to 
-L<https://docs.smartling.com/display/docs/Files+API#FilesAPI-/file/list(GET)>
+L<https://docs.smartling.com/display/docs/Files+API#FilesAPI-/file/list%28GET%29>
 
 =cut
 
@@ -399,7 +398,7 @@ the default is ascending.
         "fileType": "[fileType]" },
     { ... } ]
  }
- 
+
 =back
 
 =back
@@ -452,7 +451,7 @@ This must be a fileUri that does not exist in the Smartling database.
 =over 4
 
  {"response":{"code":"SUCCESS","messages":[],"data":null,}}
- 
+
 =back
 
 =back
@@ -505,7 +504,6 @@ https://dashboard.smartling.com/settings/api.
 =over 4
 
  {
-
    "fileUri": "[/myproject/i18n/admin_ui.properties]",
    "stringCount": "[number]",
    "wordCount": "[number]",
@@ -515,21 +513,19 @@ https://dashboard.smartling.com/settings/api.
    "fileType": "[fileType]"
  }
  
-fileUri - A unique identifier for the uploaded file.
+ fileUri - A unique identifier for the uploaded file.
 
-stringCount - The number of strings in the uploaded file.
+ stringCount - The number of strings in the uploaded file.
 
-wordCount - The number of words in the uploaded file.
+ wordCount - The number of words in the uploaded file.
 
-approvedStringCount - The number of strings in the uploaded file that 
-are approved (available for translation).
+ approvedStringCount - The number of strings in the uploaded file that are approved (available for translation).
 
-completedStringCount - The number of strings in the uploaded file that 
-are approved and translated.
+ completedStringCount - The number of strings in the uploaded file that are approved and translated.
 
-lastUploaded - The time and date of the last upload: YYYY-MM-DDThh:mm:ss
+ lastUploaded - The time and date of the last upload: YYYY-MM-DDThh:mm:ss
 
-fileType - The type of file: android, ios, gettext, javaProperties, xliff, yaml
+ fileType - The type of file: android, ios, gettext, javaProperties, xliff, yaml
  
 =back
 
@@ -554,7 +550,7 @@ Uploads original source content to Smartling (5MB limit), not translated
 files (other than importing .tmx files).
 
 Refer to 
-L<https://docs.smartling.com/display/docs/Files+API#FilesAPI-/file/upload(POST)>
+L<https://docs.smartling.com/display/docs/Files+API#FilesAPI-/file/upload%28POST%29>
 
 =over 4
 
@@ -614,14 +610,13 @@ callbackUrl for that file.
    "stringCount": "[number]",
    "wordCount": "[number]"
  }
- 
-overWritten - Indicates whether the uploaded file has overwritten an 
-existing file; either true or false.
 
-stringCount - The number of strings in the uploaded file.
+ overWritten - Indicates whether the uploaded file has overwritten an existing file; either true or false.
 
-wordCount - The number of words in the uploaded file.
- 
+ stringCount - The number of strings in the uploaded file.
+
+ wordCount - The number of words in the uploaded file.
+
 =back
 
 =back
@@ -691,12 +686,12 @@ B<none>
        }
    ]
  }
- 
-locale - Locale identifier
 
-name - Source locale name
+ locale - Locale identifier
 
-translated - Localized locale name
+ name - Source locale name
+
+ translated - Localized locale name
 
 =back
 
