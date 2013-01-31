@@ -339,7 +339,7 @@ INTERFACE
              translated - Localized locale name
 
 AUTHOR
-    Matthew Cox, "<matt.cox at runkeeper.com>"
+    Matthew Cox, "<coxmat+cpan at gmail.com>"
 
 BUGS
     Please report any bugs or feature requests to "bug-webservice-smartling

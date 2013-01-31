@@ -707,7 +707,7 @@ sub projectLocaleList {
 
 =head1 AUTHOR
 
-Matthew Cox, C<< <matt.cox at runkeeper.com> >>
+Matthew Cox, C<< <coxmat+cpan at gmail.com> >>
 
 =head1 BUGS
 
@@ -792,3 +792,4 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 =cut
 
 1; # End of WebService::Smartling
+__END__

@@ -370,7 +370,7 @@ Refer to [https://docs.smartling.com/display/docs/Projects+API](https://docs.sma
 
 # AUTHOR
 
-Matthew Cox, `<matt.cox at runkeeper.com>`
+Matthew Cox, `<coxmat+cpan at gmail.com>`
 
 # BUGS
 
