@@ -11,7 +11,7 @@ use Carp;
 require JSON;
 use Params::Validate qw( :all );
 use Readonly;
-use Smart::Comments;
+#use Smart::Comments;
 
 =head1 NAME
 
