@@ -472,8 +472,7 @@ sub fileRename {
 
 =head2 fileStatus(I<%params>)
 
-Uploads original source content to Smartling (5MB limit), not translated 
-files (other than importing .tmx files).
+Returns the translation status for the provided file and locale.
 
 Refer to 
 L<https://docs.smartling.com/display/docs/Files+API#FilesAPI-/file/status%28GET%29>
@@ -707,7 +706,7 @@ sub projectLocaleList {
 
 =head1 AUTHOR
 
-Matthew Cox, C<< <coxmat+cpan at gmail.com> >>
+Matthew Cox, C<< <mcox at cpan.org> >>
 
 =head1 BUGS
 

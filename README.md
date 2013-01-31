@@ -232,8 +232,7 @@ Refer to
 
 ## fileStatus(_%params_)
 
-Uploads original source content to Smartling (5MB limit), not translated 
-files (other than importing .tmx files).
+Returns the translation status for the provided file and locale.
 
 Refer to 
 [https://docs.smartling.com/display/docs/Files+API\#FilesAPI-/file/status%28GET%29](https://docs.smartling.com/display/docs/Files+API\#FilesAPI-/file/status%28GET%29)
@@ -370,7 +369,7 @@ Refer to [https://docs.smartling.com/display/docs/Projects+API](https://docs.sma
 
 # AUTHOR
 
-Matthew Cox, `<coxmat+cpan at gmail.com>`
+Matthew Cox, `<mcox at cpan.org>`
 
 # BUGS
 
