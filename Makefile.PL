@@ -3,7 +3,6 @@ use inc::Module::Install;
 # Define metadata
 name     'WebService-Smartling';
 all_from 'lib/WebService/Smartling.pm';
-version  '0.02';
 
 # Specific dependencies
 requires 'Carp';
