@@ -24,7 +24,7 @@ Version 0.01
 =cut
 
 use version;
-our $VERSION = version->declare("v0.01");
+our $VERSION = version->declare("v0.02");
 
 =head1 SYNOPSIS
 

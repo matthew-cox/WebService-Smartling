@@ -1,5 +1,8 @@
 Revision history for WebService-Smartling
 
+0.02    2013-02-01
+        Fix dependencies and version spec.
+        
 0.01    2013-01-31
         First version, released on an unsuspecting world.
 

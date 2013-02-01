@@ -1,7 +1,7 @@
 ---
 abstract: 'The great new WebService::Smartling!'
 author:
-  - 'Matthew Cox, C<< <coxmat+cpan at gmail.com> >>'
+  - 'Matthew Cox, C<< <mcox at cpan.org> >>'
 build_requires:
   ExtUtils::MakeMaker: 6.59
 configure_requires:
@@ -23,8 +23,9 @@ requires:
   JSON: 0
   Params::Validate: 0
   Readonly: 0
+  WebService::Simple: 0
   perl: 5.6.0
   version: 0
 resources:
   license: http://opensource.org/licenses/artistic-license.php
-version: 0.001000
+version: 0.02
