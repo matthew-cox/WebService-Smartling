@@ -4,7 +4,7 @@ WebService::Smartling - The great new WebService::Smartling!
 
 # VERSION
 
-Version 0.01
+Version 0.0.3
 
 # SYNOPSIS
 
