@@ -1,5 +1,8 @@
 Revision history for WebService-Smartling
 
+0.0.4   2013-02-03
+        Add encoding for pod
+        
 0.0.3   2013-02-01
         Really, for reals fix the version string
         

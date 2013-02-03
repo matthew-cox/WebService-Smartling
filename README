@@ -2,7 +2,7 @@ NAME
     WebService::Smartling - The great new WebService::Smartling!
 
 VERSION
-    Version 0.0.3
+    Version 0.0.4
 
 SYNOPSIS
     This module provides a Perl wrapper around Smartling's (
@@ -100,9 +100,9 @@ INTERFACE
         pseudo indicates that Smartling returns a modified version of the
         original text with certain characters transformed and the text
         expanded. For example, the uploaded string "This is a sample
-        string", will return as "T~h�s ~�s á s~ámpl~é str~�ñg".
-        Pseudo translations enable you to test how a longer string
-        integrates into your application.
+        string", will return as "T~hís ~ís á s~ámpl~é str~íñg". Pseudo
+        translations enable you to test how a longer string integrates into
+        your application.
 
         If you do not specify a value, Smartling assumes published.
 

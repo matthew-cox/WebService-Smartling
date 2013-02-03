@@ -28,4 +28,4 @@ requires:
   version: 0
 resources:
   license: http://opensource.org/licenses/artistic-license.php
-version: 0.000003
+version: 0.000004

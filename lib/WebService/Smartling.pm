@@ -13,18 +13,20 @@ use Params::Validate qw( :all );
 use Readonly;
 #use Smart::Comments;
 
+=encoding utf-8
+
 =head1 NAME
 
 WebService::Smartling - The great new WebService::Smartling!
 
 =head1 VERSION
 
-Version 0.0.3
+Version 0.0.4
 
 =cut
 
 use version;
-our $VERSION = version->declare("v0.0.3");
+our $VERSION = version->declare("v0.0.4");
 
 =head1 SYNOPSIS
 
