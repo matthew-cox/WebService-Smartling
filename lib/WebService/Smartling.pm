@@ -21,12 +21,12 @@ WebService::Smartling - The great new WebService::Smartling!
 
 =head1 VERSION
 
-Version 0.0.4
+Version 0.0.5
 
 =cut
 
 use version;
-our $VERSION = version->declare("v0.0.4");
+our $VERSION = version->declare("v0.0.5");
 
 =head1 SYNOPSIS
 
@@ -54,7 +54,7 @@ Readonly our $REGEX_APIKEY => '^[A-Fa-f0-9-]{36}$';
 Readonly our $REGEX_PROJID => '^[A-Fa-f0-9]{9}$';
 
 Readonly our $REGEX_CONDITIONS => '^(haveAtLeastOneUnapproved|haveAtLeastOneApproved|haveAtLeastOneTranslated|haveAllTranslated|haveAllApproved|haveAllUnapproved)$';
-Readonly our $REGEX_FILETYPES  => '^(android|ios|gettext|javaProperties|xliff|yaml)$';
+Readonly our $REGEX_FILETYPES  => '^(android|docx|ios|gettext|html|xlsx|javaProperties|json|pptx|xliff|xlsx|xml|yaml)$';
 Readonly our $REGEX_FILEURI    => '^\S+$';
 Readonly our $REGEX_INT        => '^\d+$';
 Readonly our $REGEX_RETYPE     => '^(pending|published|pseudo)$';
@@ -106,8 +106,8 @@ my( %ALL_SPECS ) = (
   conditions         => { type => ARRAYREF },
   file               => { type      => SCALAR, 
                           callbacks => {
-                            'readable file' => sub { -r shift() },
-                            'less than 5MB' => sub { (sprintf( "%.2f", (-s shift()) / 1024 / 1024) < 5 ) },
+                            'readable file' => sub { my( $f ) = shift(); return "$f" ne "" && -r "$f" },
+                            'less than 5MB' => sub { my( $f ) = shift(); return "$f" ne "" && -r "$f" && (sprintf( "%.2f", (-s "$f") / 1024 / 1024) < 5 ); };
                             },
                           untaint => 1
                         },
